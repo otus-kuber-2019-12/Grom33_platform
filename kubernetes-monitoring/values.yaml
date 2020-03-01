@@ -1,0 +1,10 @@
+prometheus:
+  prometheusSpec:
+    retention: 3d
+    serviceMonitorNamespaceSelector: {} ### Namespace for ServiceMonitors select
+    serviceMonitorSelectorNilUsesHelmValues: false
+    serviceMonitorSelector: {} ### matchLabels for ServiceMonitors select
+  service:
+    nodePort: 31060
+grafana:
+  adminPassword: admin
