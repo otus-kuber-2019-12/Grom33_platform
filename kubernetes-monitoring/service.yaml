@@ -6,7 +6,6 @@ metadata:
   labels:
     app: nginx-test
 spec:
-#  clusterIP: 10.96.251.58
   type: NodePort
   ports:
    - name: monitoring
